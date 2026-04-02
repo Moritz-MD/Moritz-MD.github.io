@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Moritz Research Notes</title>
+    <style>
+      body {
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 2rem 1rem 4rem;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        line-height: 1.6;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      article {
+        border: 1px solid #9994;
+        border-radius: 10px;
+        padding: 1rem;
+      }
+      .tag {
+        display: inline-block;
+        border: 1px solid #9996;
+        border-radius: 999px;
+        padding: 0.06rem 0.5rem;
+        margin-right: 0.35rem;
+        font-size: 0.85rem;
+      }
+      code { background: #9992; padding: 0.1rem 0.35rem; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Blog</h1>
+      <p>Research updates and idea logs. This is a manual index for plain HTML, but paths stay Jekyll-compatible.</p>
+      <p><a href="/index.html">← Back to home</a></p>
+    </header>
+
+    <section>
+      <h2>Posts</h2>
+      <div class="cards">
+        <article>
+          <h3><a href="/blog/posts/welcome.html">Why this research blog</a></h3>
+          <p><strong>Date:</strong> 2026-04-02</p>
+          <p><strong>Tags:</strong> <span class="tag">meta</span> <span class="tag">research-process</span></p>
+          <p>Why this blog exists, what it will contain, and how often it will be updated.</p>
+        </article>
+
+        <article>
+          <h3><a href="/blog/posts/2026-04-01-literature-map-checklist.html">Literature map checklist</a></h3>
+          <p><strong>Date:</strong> 2026-04-01</p>
+          <p><strong>Tags:</strong> <span class="tag">methods</span> <span class="tag">reading</span></p>
+          <p>A practical checklist to move from random papers to a structured map of a field.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Posting convention</h2>
+      <p>For each new post, create a file at <code>blog/posts/YYYY-MM-DD-title.md</code> (or <code>.html</code> while plain HTML is used).</p>
+      <p>Each post should include visible metadata fields:</p>
+      <ul>
+        <li><strong>Title:</strong> human-readable post title</li>
+        <li><strong>Date:</strong> publication date in YYYY-MM-DD</li>
+        <li><strong>Tags:</strong> topic tags like methods, theory, experiments</li>
+      </ul>
+      <p>When using plain HTML, manually add each new entry to this index. If migrated to Jekyll later, keep the same directory and URL pattern.</p>
+    </section>
+  </body>
+</html>
