@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moritz Research Notes</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      }
+      body {
+        margin: 0 auto;
+        max-width: 860px;
+        padding: 2rem 1rem 4rem;
+        line-height: 1.55;
+      }
+      h1, h2 { line-height: 1.2; }
+      .muted { color: #666; }
+      .latest {
+        margin-top: 2rem;
+        padding: 1rem;
+        border: 1px solid #9994;
+        border-radius: 10px;
+      }
+      .post-list {
+        list-style: none;
+        margin: 1rem 0 0;
+        padding: 0;
+        display: grid;
+        gap: 0.9rem;
+      }
+      .post-list li {
+        border: 1px solid #9994;
+        border-radius: 8px;
+        padding: 0.8rem;
+      }
+      a { text-underline-offset: 2px; }
+      .tag {
+        display: inline-block;
+        border: 1px solid #9996;
+        border-radius: 999px;
+        padding: 0.08rem 0.55rem;
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Moritz Research Notes</h1>
+      <p class="muted">Working notes, summaries, and early ideas from active research threads.</p>
+    </header>
+
+    <section class="latest" aria-labelledby="latest-ideas">
+      <h2 id="latest-ideas">Latest ideas</h2>
+      <p><a href="/blog/index.html">Browse all blog posts →</a></p>
+      <ul class="post-list">
+        <li>
+          <a href="/blog/posts/welcome.html"><strong>Why this research blog</strong></a><br />
+          <small>2026-04-02 · <span class="tag">meta</span> <span class="tag">research-process</span></small>
+          <p>A short explanation of why this space exists and what kinds of notes will appear here.</p>
+        </li>
+        <li>
+          <a href="/blog/posts/2026-04-01-literature-map-checklist.html"><strong>Literature map checklist</strong></a><br />
+          <small>2026-04-01 · <span class="tag">methods</span> <span class="tag">reading</span></small>
+          <p>A compact checklist for turning scattered papers into a navigable literature map.</p>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
