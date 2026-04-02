@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moritz — PhD Researcher in Information Systems</title>
+    <style>
+      :root {
+        --background: #ffffff;
+        --text: #1f2933;
+        --muted: #52606d;
+        --accent: #2f6fed;
+        --max-width: 760px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background: var(--background);
+      }
+
+      .page {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 4rem 1.5rem 5rem;
+      }
+
+      header,
+      section,
+      footer {
+        margin-bottom: 4rem;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.25;
+        margin: 0 0 1rem;
+      }
+
+      h1 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+      }
+
+      h2 {
+        font-size: clamp(1.2rem, 2.4vw, 1.5rem);
+      }
+
+      p {
+        margin: 0 0 1rem;
+        color: var(--muted);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .hero img {
+        width: min(220px, 100%);
+        height: auto;
+        border-radius: 0.75rem;
+      }
+
+      .title {
+        display: block;
+        font-weight: 500;
+        color: var(--accent);
+        margin-top: 0.25rem;
+      }
+
+      .links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.2em;
+      }
+
+      a:hover,
+      a:focus-visible {
+        text-decoration-thickness: 2px;
+      }
+
+      footer {
+        border-top: 1px solid #e4e7eb;
+        padding-top: 1.5rem;
+        margin-bottom: 0;
+      }
+
+      @media (min-width: 680px) {
+        .hero {
+          grid-template-columns: 220px 1fr;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero" aria-labelledby="hero-title">
+        <img
+          src="assets/profile.jpg"
+          alt="Portrait of Moritz, PhD researcher in Information Systems"
+        />
+        <div>
+          <h1 id="hero-title">
+            Moritz
+            <span class="title">PhD Researcher in Information Systems</span>
+          </h1>
+          <p>
+            I explore how people and intelligent technologies shape one another in
+            digital environments. My work bridges Information Systems, Computer
+            Science, and Human-Computer Interaction to design responsible,
+            human-centered systems.
+          </p>
+          <p>
+            I focus on turning rigorous research into practical insights for
+            organizations, platform designers, and policy stakeholders.
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <section aria-labelledby="research-focus-heading">
+          <h2 id="research-focus-heading">Research focus</h2>
+          <p>
+            My research examines socio-technical systems, algorithmic decision
+            support, and digital collaboration. I am particularly interested in
+            how interface design and data-driven models influence trust,
+            transparency, and long-term system adoption.
+          </p>
+        </section>
+
+        <section aria-labelledby="professional-links-heading">
+          <h2 id="professional-links-heading">Professional links</h2>
+          <ul class="links">
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+            <li><a href="https://www.uni-due.de" target="_blank" rel="noopener noreferrer">University page</a></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="blog-teaser-heading">
+          <h2 id="blog-teaser-heading">Blog teaser</h2>
+          <p>
+            I share short research notes, methods reflections, and updates from
+            ongoing projects. Full posts and publications are coming soon.
+          </p>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2026 Moritz. Built with clarity, accessibility, and focus.</p>
+      </footer>
+    </div>
+  </body>
+</html>
