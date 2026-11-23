@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publications | Moritz Diener</title>
     <meta name="description" content="Publications by Moritz Diener." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -13,11 +16,8 @@
       <nav aria-label="Main">
         <a class="site-title" href="/">Moritz Diener</a>
         <a href="/research.html">Research</a>
-        <a class="selected" href="/publications.html">Publications</a>
+        <a aria-current="page" href="/publications.html">Publications</a>
         <a href="/projects.html">Projects</a>
-        <a href="/teaching.html">Teaching</a>
-        <a href="/education.html">Education</a>
-        <a href="/experience.html">Experience</a>
       </nav>
     </header>
 
@@ -27,66 +27,68 @@
           <img src="/assets/moritz-diener.jpeg" alt="Moritz Diener" />
         </div>
         <div>
-          <h3 class="author__name">Moritz Diener</h3>
-          <p class="author__bio">AI in Organizations. PhD candidate in Information Systems &amp; Human-Computer Interaction, KIT</p>
+          <p class="author__name">Moritz Diener</p>
+          <p class="author__bio">PhD candidate at KIT · AI in organizations</p>
         </div>
         <ul class="author__urls">
-          <li class="wide-only"><i class="fa-solid fa-location-dot"></i>Karlsruhe, Germany</li>
-          <li class="wide-only"><i class="fa-solid fa-building-columns"></i><a href="https://dsi.win.kit.edu/team_1108.php">KIT, Digital Service Innovation</a></li>
-          <li><i class="fa-solid fa-envelope"></i><a href="mailto:moritz.diener@kit.edu">Email</a></li>
-          <li><i class="fa-brands fa-google-scholar"></i><a href="https://scholar.google.com/citations?user=kDARuU4AAAAJ">Google Scholar</a></li>
-          <li><i class="fa-brands fa-github"></i><a href="https://github.com/Moritz-MD">GitHub</a></li>
-          <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/moritz-diener-221980211/">LinkedIn</a></li>
+          <li class="wide-only"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Karlsruhe, Germany</li>
+          <li><a href="mailto:moritz.diener@kit.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=kDARuU4AAAAJ"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i>Google Scholar</a></li>
+          <li><a href="https://github.com/Moritz-MD"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/moritz-diener-221980211/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
         </ul>
       </aside>
 
       <main class="page">
         <h1>Publications</h1>
-        <p class="muted">* equal contribution. Full list on <a href="https://scholar.google.com/citations?user=kDARuU4AAAAJ">Google Scholar</a>.</p>
+        <p class="muted">* equal contribution · also on <a href="https://scholar.google.com/citations?user=kDARuU4AAAAJ">Google Scholar</a></p>
 
-        <h2 class="archive__subtitle">Under review</h2>
+        <h2>Under review</h2>
+        <ul class="pubs">
+          <li class="pub" id="facct">
+            <p class="pub-title">Today's Work, Tomorrow's Workforce: Incentivizing Learning in AI-Assisted Work</p>
+            <p class="pub-authors"><b>Moritz Diener*</b>, Daniel Hendriks*, Philipp Spitzer, Gerhard Satzger, Joshua Holstein, Wei Sun</p>
+            <p class="pub-venue">ACM FAccT 2027 (under review)</p>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2611.06346">arXiv</a></span>
+          </li>
+          <li class="pub" id="iclr">
+            <p class="pub-title">Lost in Formulation: Disentangling and Measuring Prompt Sensitivity</p>
+            <p class="pub-authors">Thanos Drossos*, <b>Moritz Diener*</b>, Daniel Hendriks, Philipp Spitzer, Joshua Holstein</p>
+            <p class="pub-venue">ICLR 2027 (under review)</p>
+            <span class="pub-links"><a href="https://openreview.net/forum?id=Pu6WmLmVI6">OpenReview</a></span>
+          </li>
+        </ul>
 
-        <article class="archive__item" id="facct">
-          <h3 class="archive__item-title"><a href="https://arxiv.org/abs/2611.06346">Today's Work, Tomorrow's Workforce: Incentivizing Learning in AI-Assisted Work</a></h3>
-          <p class="authors"><b>Moritz Diener*</b>, Daniel Hendriks*, Philipp Spitzer, Gerhard Satzger, Joshua Holstein, Wei Sun</p>
-          <p>Under review at <i>ACM FAccT 2027</i> · <a href="https://arxiv.org/abs/2611.06346">arXiv:2611.06346</a></p>
-        </article>
+        <h2>Conference papers</h2>
+        <ul class="pubs">
+          <li class="pub" id="ecis">
+            <p class="pub-title">Rethinking Knowledge Work: Designing LLM-based Systems for Complexity Management</p>
+            <p class="pub-authors"><b>Moritz Diener</b>, Simon Kaps, Philipp Spitzer, Robin Hirt, Michael Vössing, Gerhard Satzger</p>
+            <p class="pub-venue">European Conference on Information Systems (ECIS) 2026 · selected for AIS Insights</p>
+            <p class="excerpt">An LLM-agent system for public tender analysis, built with an SME: 59% faster initial screening at 88.8% retrieval accuracy on 34 real tenders.</p>
+          </li>
+          <li class="pub" id="icis">
+            <p class="pub-title">Bridging Corporate Claims and Public Perception: Real-Time Validation of ESG Initiatives with Social-Media Analytics</p>
+            <p class="pub-authors">Nidhi Mishra, <b>Moritz Diener</b>, Daniel Heinz, Philipp Spitzer, Philippe Cudré-Mauroux</p>
+            <p class="pub-venue">International Conference on Information Systems (ICIS) 2025</p>
+            <span class="pub-links"><a href="https://doi.org/10.5445/IR/1000185981">Paper</a></span>
+          </li>
+          <li class="pub" id="wi">
+            <p class="pub-title">Constructing Insights: Leveraging Large Language Models for Information Retrieval in Unstructured Document Collections with ConSight</p>
+            <p class="pub-authors"><b>Moritz Diener</b>, Sebastian Schäfer, Philipp Spitzer, Michael Vössing</p>
+            <p class="pub-venue">International Conference on Wirtschaftsinformatik (WI) 2025</p>
+          </li>
+        </ul>
 
-        <article class="archive__item" id="iclr">
-          <h3 class="archive__item-title"><a href="https://openreview.net/forum?id=Pu6WmLmVI6">Lost in Formulation: Disentangling and Measuring Prompt Sensitivity</a></h3>
-          <p class="authors">Thanos Drossos*, <b>Moritz Diener*</b>, Daniel Hendriks, Philipp Spitzer, Joshua Holstein</p>
-          <p>Under review at <i>ICLR 2027</i> · <a href="https://openreview.net/forum?id=Pu6WmLmVI6">OpenReview</a></p>
-        </article>
-
-        <h2 class="archive__subtitle">Conference papers</h2>
-
-        <article class="archive__item" id="ecis">
-          <h3 class="archive__item-title">Rethinking Knowledge Work: Designing LLM-based Systems for Complexity Management</h3>
-          <p class="authors"><b>Moritz Diener</b>, Simon Kaps, Philipp Spitzer, Robin Hirt, Michael Vössing, Gerhard Satzger</p>
-          <p>Published in <i>European Conference on Information Systems (ECIS)</i>, 2026. Selected for AIS Insights.</p>
-          <p class="excerpt">An LLM-based system for analysing public tenders, designed with an SME. On 34 real tenders it cut initial screening time by 59% at 88.8% retrieval accuracy.</p>
-        </article>
-
-        <article class="archive__item" id="icis">
-          <h3 class="archive__item-title"><a href="https://doi.org/10.5445/IR/1000185981">Bridging Corporate Claims and Public Perception: Real-Time Validation of ESG Initiatives with Social-Media Analytics</a></h3>
-          <p class="authors">Nidhi Mishra, <b>Moritz Diener</b>, Daniel Heinz, Philipp Spitzer, Philippe Cudré-Mauroux</p>
-          <p>Published in <i>International Conference on Information Systems (ICIS)</i>, 2025</p>
-        </article>
-
-        <article class="archive__item" id="wi">
-          <h3 class="archive__item-title">Constructing Insights: Leveraging Large Language Models for Information Retrieval in Unstructured Document Collections with ConSight</h3>
-          <p class="authors"><b>Moritz Diener</b>, Sebastian Schäfer, Philipp Spitzer, Michael Vössing</p>
-          <p>Published in <i>International Conference on Wirtschaftsinformatik (WI)</i>, 2025</p>
-        </article>
-
-        <h2 class="archive__subtitle">Workshop papers</h2>
-
-        <article class="archive__item" id="chi">
-          <h3 class="archive__item-title"><a href="https://arxiv.org/abs/2504.02780">From Consumption to Collaboration: Measuring Interaction Patterns to Augment Human Cognition in Open-Ended Tasks</a></h3>
-          <p class="authors">Joshua Holstein, <b>Moritz Diener</b>, Philipp Spitzer</p>
-          <p>Tools for Thought Workshop at <i>ACM CHI</i>, 2025 · <a href="https://arxiv.org/abs/2504.02780">arXiv:2504.02780</a></p>
-        </article>
-      
+        <h2>Workshop papers</h2>
+        <ul class="pubs">
+          <li class="pub" id="chi">
+            <p class="pub-title">From Consumption to Collaboration: Measuring Interaction Patterns to Augment Human Cognition in Open-Ended Tasks</p>
+            <p class="pub-authors">Joshua Holstein, <b>Moritz Diener</b>, Philipp Spitzer</p>
+            <p class="pub-venue">Tools for Thought Workshop at ACM CHI 2025</p>
+            <span class="pub-links"><a href="https://arxiv.org/abs/2504.02780">arXiv</a></span>
+          </li>
+        </ul>
       </main>
     </div>
 

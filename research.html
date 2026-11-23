@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Research | Moritz Diener</title>
     <meta name="description" content="Current research of Moritz Diener on skill erosion, incentives and LLM reliability in AI-assisted work." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -12,12 +15,9 @@
     <header class="masthead">
       <nav aria-label="Main">
         <a class="site-title" href="/">Moritz Diener</a>
-        <a class="selected" href="/research.html">Research</a>
+        <a aria-current="page" href="/research.html">Research</a>
         <a href="/publications.html">Publications</a>
         <a href="/projects.html">Projects</a>
-        <a href="/teaching.html">Teaching</a>
-        <a href="/education.html">Education</a>
-        <a href="/experience.html">Experience</a>
       </nav>
     </header>
 
@@ -27,51 +27,71 @@
           <img src="/assets/moritz-diener.jpeg" alt="Moritz Diener" />
         </div>
         <div>
-          <h3 class="author__name">Moritz Diener</h3>
-          <p class="author__bio">AI in Organizations. PhD candidate in Information Systems &amp; Human-Computer Interaction, KIT</p>
+          <p class="author__name">Moritz Diener</p>
+          <p class="author__bio">PhD candidate at KIT · AI in organizations</p>
         </div>
         <ul class="author__urls">
-          <li class="wide-only"><i class="fa-solid fa-location-dot"></i>Karlsruhe, Germany</li>
-          <li class="wide-only"><i class="fa-solid fa-building-columns"></i><a href="https://dsi.win.kit.edu/team_1108.php">KIT, Digital Service Innovation</a></li>
-          <li><i class="fa-solid fa-envelope"></i><a href="mailto:moritz.diener@kit.edu">Email</a></li>
-          <li><i class="fa-brands fa-google-scholar"></i><a href="https://scholar.google.com/citations?user=kDARuU4AAAAJ">Google Scholar</a></li>
-          <li><i class="fa-brands fa-github"></i><a href="https://github.com/Moritz-MD">GitHub</a></li>
-          <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/moritz-diener-221980211/">LinkedIn</a></li>
+          <li class="wide-only"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Karlsruhe, Germany</li>
+          <li><a href="mailto:moritz.diener@kit.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=kDARuU4AAAAJ"><i class="fa-brands fa-google-scholar" aria-hidden="true"></i>Google Scholar</a></li>
+          <li><a href="https://github.com/Moritz-MD"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/moritz-diener-221980211/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a></li>
         </ul>
       </aside>
 
       <main class="page">
         <h1>Research</h1>
-        <p>
-          My research asks how AI can raise productivity while preserving and
-          fostering human expertise. These are the projects I am currently working on.
+        <p class="lead">
+          What happens to human expertise when AI does more of the work, and how
+          can organizations keep people learning?
         </p>
 
-        <h2>Skill erosion and incentives in AI-assisted work</h2>
-        <p class="muted">Under review at ACM FAccT 2027 · <a href="https://arxiv.org/abs/2611.06346">arXiv:2611.06346</a></p>
-        <p>
-          Models how expertise builds through practice and erodes through AI reliance:
-          novices can get trapped at low skill and experts lose skill while AI-assisted
-          accuracy stays high; incentive payments for learning counteract this.
-        </p>
+        <article class="project">
+          <h2>Skill erosion and incentives in AI-assisted work</h2>
+          <p class="kicker">Formal modeling · under review at ACM FAccT 2027</p>
+          <p>
+            Expertise builds through practice and erodes through reliance on AI. In
+            our model, novices can get trapped at low skill and experts lose skill
+            while AI-assisted accuracy stays high. Incentive payments for learning
+            counteract this.
+          </p>
+          <span class="pub-links"><a href="https://arxiv.org/abs/2611.06346">arXiv</a></span>
+        </article>
 
-        <h2>Reliability of the LLMs people rely on</h2>
-        <p class="muted">Under review at ICLR 2027 · <a href="https://openreview.net/forum?id=Pu6WmLmVI6">OpenReview</a></p>
-        <p>
-          Disentangling and measuring how sensitive LLM outputs are to prompt
-          formulation.
-        </p>
+        <article class="project">
+          <h2>Reliability of the LLMs people rely on</h2>
+          <p class="kicker">LLM evaluation · under review at ICLR 2027</p>
+          <p>
+            Disentangling and measuring how sensitive LLM outputs are to the way a
+            prompt is formulated.
+          </p>
+          <span class="pub-links"><a href="https://openreview.net/forum?id=Pu6WmLmVI6">OpenReview</a></span>
+        </article>
 
-        <h2>Scaffolding skill hierarchies in AI-assisted work</h2>
-        <p class="muted">Work in progress</p>
-        <p>
-          A formal model of skill hierarchies, in which higher-order skills rest on
-          foundational tasks that AI now takes over:
-        </p>
-        <ul>
-          <li>When does delegating a foundational skill to AI erode the higher-order skills built on it?</li>
-          <li>Which scaffolds (work design, incentives, useful friction) build and preserve skills while also benefiting organizations?</li>
-        </ul>
+        <article class="project">
+          <h2>Scaffolding skill hierarchies in AI-assisted work</h2>
+          <p class="kicker">Formal modeling · work in progress</p>
+          <p>
+            Higher-order skills rest on foundational tasks that AI now takes over. I
+            am building a formal model of skill hierarchies to ask:
+          </p>
+          <ul>
+            <li>When does delegating a foundational skill to AI erode the higher-order skills built on it?</li>
+            <li>Which scaffolds (work design, incentives, useful friction) build and preserve skills while also benefiting organizations?</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h2>LLM-based systems for complex knowledge work</h2>
+          <p class="kicker">Design science with industry · ECIS 2026</p>
+          <p>
+            Together with an SME, we designed an LLM-agent system for public tender
+            analysis. On 34 real tenders it cut initial screening time by 59% at
+            88.8% retrieval accuracy, and experts shifted from reading documents to
+            orchestrating and verifying the system's output.
+          </p>
+          <span class="pub-links"><a href="/publications.html#ecis">Paper details</a></span>
+        </article>
       </main>
     </div>
 
