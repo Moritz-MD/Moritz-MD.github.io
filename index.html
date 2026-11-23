@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moritz Diener</title>
-    <meta name="description" content="Moritz Diener, PhD candidate at KIT, researches how organizations can improve productivity with AI while helping people develop and retain expertise." />
+    <meta name="description" content="Moritz Diener, PhD candidate at KIT, researches how organizations can use AI to become more productive while helping people develop and retain expertise." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
@@ -16,9 +16,8 @@
     <header class="masthead">
       <nav aria-label="Main">
         <a class="site-title" aria-current="page" href="/">Moritz Diener</a>
-        <a href="/research.html">Research</a>
         <a href="/publications.html">Publications</a>
-        <a href="/projects.html">Projects</a>
+        <a href="/projects.html">Projects &amp; Teaching</a>
       </nav>
     </header>
 
@@ -42,40 +41,75 @@
 
       <main class="page" id="main-content" tabindex="-1">
         <h1 class="hello">Hi there, I’m Moritz!</h1>
-        <p>
-          I’m a <b>PhD candidate in Information Systems</b> at the <b>Karlsruhe
-          Institute of Technology (KIT)</b>, advised by Gerhard Satzger in the
+        <p class="intro">
+          I’m a PhD candidate in Information Systems at the Karlsruhe Institute of
+          Technology (KIT), advised by Gerhard Satzger in the
           <a href="https://dsi.win.kit.edu/">Digital Service Innovation</a> group. I
-          research <b>AI in and for organizations</b>: how organizations can
-          <b>improve productivity with AI while helping people develop and retain
-          expertise</b>. I study when relying on AI leads to <b>skill erosion</b>,
-          how <b>incentives and work design</b> can keep people learning, and how
-          <b>reliable the LLMs</b> are that people depend on.
+          research <b>how organizations can use AI to become more productive while
+          helping people develop and retain their expertise</b>.
         </p>
         <p>
-          To answer these questions, I combine <b>formal modeling</b>, <b>LLM
-          evaluation</b>, and <b>systems built and tested with industry
-          partners</b>. I studied <b>Industrial Engineering and Management
-          (B.Sc.)</b> and <b>Information Systems (M.Sc.)</b> at KIT, with exchange
-          semesters in Kaunas and Klagenfurt, and worked on <b>machine learning and
-          technology strategy</b> at TRUUCO, Siemens and Netze BW. Outside work, I
-          train for triathlons, play classical guitar, and spend as much time as I
-          can in the mountains.
+          My work moves between theory and practice. I build <b>formal models</b> of
+          how skills grow and erode when people work with AI, <b>evaluate the
+          LLMs</b> people rely on, and <b>design and test LLM-based systems</b>
+          together with companies in construction and public procurement. Before my
+          PhD, I studied Industrial Engineering and Management (B.Sc.) and
+          Information Systems (M.Sc.) at KIT and worked on machine learning and
+          technology strategy at TRUUCO, Siemens and Netze BW.
+        </p>
+        <p>
+          Outside work, I train for triathlons, play classical guitar, and spend as
+          much time as I can in the mountains.
         </p>
 
-        <h2>Selected work</h2>
-        <ul class="selected">
-          <li><a href="/publications.html#facct">Today’s Work, Tomorrow’s Workforce: Incentivizing Learning in AI-Assisted Work</a> <span class="muted">· 2026 preprint, under review at FAccT 2027</span></li>
-          <li><a href="/publications.html#iclr">Lost in Formulation: Disentangling and Measuring Prompt Sensitivity</a> <span class="muted">· under review at ICLR 2027</span></li>
-          <li><a href="/publications.html#ecis">Rethinking Knowledge Work: Designing LLM-based Systems for Complexity Management</a> <span class="muted">· ECIS 2026</span></li>
-        </ul>
+        <h2>Research focus</h2>
 
-        <h2>Talks and service</h2>
-        <ul class="themes">
-          <li>Talk on “Rethinking Knowledge Work” at <b>ECIS 2026</b> in Milan</li>
-          <li>Talk on human-centered AI at the kickoff of the <a href="/projects.html#concircle">ConCIRCLE</a> project</li>
-          <li>Reviewer for <b>ECIS</b>, <b>ICIS</b> and <b>WI</b></li>
-        </ul>
+        <article class="focus" id="skill-erosion">
+          <h3>Skill erosion and incentives in AI-assisted work</h3>
+          <p>
+            Relying on AI saves effort but can take away the practice people need to
+            build and keep their skills. In our model, novices can stay at low skill
+            and experts can lose skill even while AI-assisted accuracy stays high. We
+            characterize the payments for correct independent work that help people
+            acquire and retain skills. Building on this, I am modeling
+            <b>skill hierarchies</b>: when delegating a foundational task to AI
+            erodes the higher-order skills built on it, and which task assignments or
+            incentives prevent this.
+          </p>
+          <p class="focus-meta">2026 preprint, under review at ACM FAccT 2027 · <a href="https://arxiv.org/abs/2611.06346">arXiv</a></p>
+        </article>
+
+        <article class="focus" id="prompt-sensitivity">
+          <h3>Reliability of the LLMs people rely on</h3>
+          <p>
+            How much do LLM answers change when people rephrase the same question? We
+            test how prompt wording and specificity affect answer accuracy, and
+            propose a metric that separates the effect of wording from the variation
+            you get by running the same prompt repeatedly.
+          </p>
+          <p class="focus-meta">Under review at ICLR 2027 · <a href="https://openreview.net/forum?id=Pu6WmLmVI6">OpenReview submission</a></p>
+        </article>
+
+        <article class="focus" id="systems">
+          <h3>LLM-based systems in organizations</h3>
+          <p>
+            With a small business, we built an LLM-based system for public tender
+            screening. Across 34 tender documents, initial screening took 59% less
+            time than manual screening, at 88.8% accuracy for text fields and 83.9%
+            for yes/no checks. In think-aloud sessions with five experts, we observed
+            a shift from extracting information to checking the system’s outputs. In
+            the NaiS project, we built <b>ConSight</b> for retrieving information
+            from large collections of construction documents.
+          </p>
+          <p class="focus-meta">ECIS 2026, selected for <a href="https://ais-insights.ai/insights/474">AIS Insights</a> · <a href="https://aisel.aisnet.org/ecis2026/genai/genai/12/">paper</a> · ConSight at WI 2025 · <a href="https://publikationen.bibliothek.kit.edu/1000183844">paper</a></p>
+        </article>
+
+        <div class="callout">
+          <b>Interested in collaborating?</b> I’m always happy to talk about human
+          expertise in AI-assisted work, LLM evaluation, or LLM-based systems in
+          organizations. Just send me an
+          <a href="mailto:moritz.diener@kit.edu">email</a>.
+        </div>
 
         <h2>News</h2>
         <ul class="news">

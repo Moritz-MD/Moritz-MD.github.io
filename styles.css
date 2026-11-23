@@ -524,3 +524,42 @@ b {
 .page .interests {
   margin-top: 2rem;
 }
+
+/* About page: intro, research focus, collaboration note */
+.page .intro {
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.focus {
+  margin-top: 1.4rem;
+}
+
+.focus h3 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin: 0 0 0.35rem;
+}
+
+.page .focus p {
+  margin-bottom: 0.3rem;
+}
+
+.page .focus-meta {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.page .callout {
+  margin: 2rem 0 0.5rem;
+  padding: 0.9rem 1.1rem;
+  background: rgba(29, 79, 118, 0.06);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.page .callout a {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
