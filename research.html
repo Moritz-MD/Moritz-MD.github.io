@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Research | Moritz Diener</title>
-    <meta name="description" content="Current research of Moritz Diener on skill erosion, incentives and LLM reliability in AI-assisted work." />
+    <meta name="description" content="Research of Moritz Diener on skill erosion, incentives and LLM reliability in AI-assisted work, grouped by approach." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="masthead">
       <nav aria-label="Main">
         <a class="site-title" href="/">Moritz Diener</a>
@@ -39,15 +40,15 @@
         </ul>
       </aside>
 
-      <main class="page">
+      <main class="page" id="main-content" tabindex="-1">
         <h1>Research</h1>
         <p class="lead">
-          I approach one theme, human expertise in AI-assisted work, from three
-          directions: formal models, measurement of LLMs, and systems built with
-          industry partners.
+          I study human expertise in AI-assisted work with formal models, LLM
+          evaluation, and systems built with industry partners.
         </p>
 
-        <nav class="map" aria-label="Projects by approach">
+        <p class="map-label">Jump to a study by research approach</p>
+        <nav class="map" aria-label="Studies by research approach">
           <div class="map-col">
             <p class="map-head">Model <span>formal modeling</span></p>
             <a href="#skill-erosion">Skill erosion and incentives</a>
@@ -68,12 +69,13 @@
 
         <article class="project" id="skill-erosion">
           <h3>Skill erosion and incentives in AI-assisted work</h3>
-          <p class="kicker">Under review at ACM FAccT 2027</p>
+          <p class="kicker">2026 preprint · under review at ACM FAccT 2027</p>
           <p>
-            Expertise builds through practice and erodes through reliance on AI. In
-            our model, novices can get trapped at low skill and experts lose skill
-            while AI-assisted accuracy stays high. Incentive payments for learning
-            counteract this.
+            In a model where workers gain skill through independent practice, novices
+            can remain at low skill and experts can lose skill even while AI-assisted
+            accuracy stays high. We characterize the payments for correct independent
+            work that help workers acquire and retain skills, and show when
+            independent work becomes self-sustaining without further incentives.
           </p>
           <span class="pub-links"><a href="https://arxiv.org/abs/2611.06346">arXiv</a></span>
         </article>
@@ -87,20 +89,21 @@
           </p>
           <ul>
             <li>When does delegating a foundational skill to AI erode the higher-order skills built on it?</li>
-            <li>Which scaffolds (work design, incentives, useful friction) build and preserve skills while also benefiting organizations?</li>
+            <li>Which task assignments or incentives preserve opportunities for independent practice while meeting productivity goals?</li>
           </ul>
         </article>
 
         <h2>Measure</h2>
 
         <article class="project" id="prompt-sensitivity">
-          <h3>Reliability of the LLMs people rely on</h3>
+          <h3>Measuring prompt sensitivity</h3>
           <p class="kicker">Under review at ICLR 2027</p>
           <p>
-            Disentangling and measuring how sensitive LLM outputs are to the way a
-            prompt is formulated.
+            We test how prompt wording and specificity affect answer accuracy, and
+            propose a metric that separates the effect of wording from the variation
+            you get by running the same prompt repeatedly.
           </p>
-          <span class="pub-links"><a href="https://openreview.net/forum?id=Pu6WmLmVI6">OpenReview</a></span>
+          <span class="pub-links"><a href="https://openreview.net/forum?id=Pu6WmLmVI6">OpenReview submission</a></span>
         </article>
 
         <h2>Build</h2>
@@ -109,23 +112,25 @@
           <h3>LLM-based systems for complex knowledge work</h3>
           <p class="kicker">ECIS 2026 · selected for AIS Insights</p>
           <p>
-            Together with an SME, we designed an LLM-agent system for public tender
-            analysis. On 34 real tenders it cut initial screening time by 59% at
-            88.8% retrieval accuracy, and experts shifted from reading documents to
-            orchestrating and verifying the system's output.
+            With a small business, we built an LLM-based system for public tender
+            screening. Across 34 tender documents, initial screening took 59% less
+            time than manual screening. Accuracy was 88.8% for text fields and 83.9%
+            for yes/no checks. In separate think-aloud sessions with five experts, we
+            observed a shift from extracting information to checking the system’s
+            outputs.
           </p>
-          <span class="pub-links"><a href="/publications.html#ecis">Paper details</a></span>
+          <span class="pub-links"><a href="https://doi.org/10.5445/IR/1000193408">Paper</a></span>
         </article>
 
         <article class="project" id="consight">
           <h3>ConSight: LLM-based retrieval over construction documents</h3>
           <p class="kicker">WI 2025 · NaiS project</p>
           <p>
-            An LLM-based system that extracts and analyses information from large,
+            An LLM-based system that extracts and analyzes information from large,
             unstructured collections of building documents, developed with partners
             in the NaiS project.
           </p>
-          <span class="pub-links"><a href="/projects.html">Projects</a></span>
+          <span class="pub-links"><a href="https://doi.org/10.5445/IR/1000183844">Paper</a><a href="/projects.html#nais">NaiS project</a></span>
         </article>
       </main>
     </div>
