@@ -42,13 +42,33 @@
       <main class="page">
         <h1>Research</h1>
         <p class="lead">
-          What happens to human expertise when AI does more of the work, and how
-          can organizations keep people learning?
+          I approach one theme, human expertise in AI-assisted work, from three
+          directions: formal models, measurement of LLMs, and systems built with
+          industry partners.
         </p>
 
-        <article class="project">
-          <h2>Skill erosion and incentives in AI-assisted work</h2>
-          <p class="kicker">Formal modeling · under review at ACM FAccT 2027</p>
+        <nav class="map" aria-label="Projects by approach">
+          <div class="map-col">
+            <p class="map-head">Model <span>formal modeling</span></p>
+            <a href="#skill-erosion">Skill erosion and incentives</a>
+            <a href="#skill-hierarchies">Skill hierarchies</a>
+          </div>
+          <div class="map-col">
+            <p class="map-head">Measure <span>LLM evaluation</span></p>
+            <a href="#prompt-sensitivity">Prompt sensitivity</a>
+          </div>
+          <div class="map-col">
+            <p class="map-head">Build <span>with industry partners</span></p>
+            <a href="#tender-analysis">Tender analysis</a>
+            <a href="#consight">ConSight</a>
+          </div>
+        </nav>
+
+        <h2>Model</h2>
+
+        <article class="project" id="skill-erosion">
+          <h3>Skill erosion and incentives in AI-assisted work</h3>
+          <p class="kicker">Under review at ACM FAccT 2027</p>
           <p>
             Expertise builds through practice and erodes through reliance on AI. In
             our model, novices can get trapped at low skill and experts lose skill
@@ -58,19 +78,9 @@
           <span class="pub-links"><a href="https://arxiv.org/abs/2611.06346">arXiv</a></span>
         </article>
 
-        <article class="project">
-          <h2>Reliability of the LLMs people rely on</h2>
-          <p class="kicker">LLM evaluation · under review at ICLR 2027</p>
-          <p>
-            Disentangling and measuring how sensitive LLM outputs are to the way a
-            prompt is formulated.
-          </p>
-          <span class="pub-links"><a href="https://openreview.net/forum?id=Pu6WmLmVI6">OpenReview</a></span>
-        </article>
-
-        <article class="project">
-          <h2>Scaffolding skill hierarchies in AI-assisted work</h2>
-          <p class="kicker">Formal modeling · work in progress</p>
+        <article class="project" id="skill-hierarchies">
+          <h3>Scaffolding skill hierarchies in AI-assisted work</h3>
+          <p class="kicker">Work in progress</p>
           <p>
             Higher-order skills rest on foundational tasks that AI now takes over. I
             am building a formal model of skill hierarchies to ask:
@@ -81,9 +91,23 @@
           </ul>
         </article>
 
-        <article class="project">
-          <h2>LLM-based systems for complex knowledge work</h2>
-          <p class="kicker">Design science with industry · ECIS 2026</p>
+        <h2>Measure</h2>
+
+        <article class="project" id="prompt-sensitivity">
+          <h3>Reliability of the LLMs people rely on</h3>
+          <p class="kicker">Under review at ICLR 2027</p>
+          <p>
+            Disentangling and measuring how sensitive LLM outputs are to the way a
+            prompt is formulated.
+          </p>
+          <span class="pub-links"><a href="https://openreview.net/forum?id=Pu6WmLmVI6">OpenReview</a></span>
+        </article>
+
+        <h2>Build</h2>
+
+        <article class="project" id="tender-analysis">
+          <h3>LLM-based systems for complex knowledge work</h3>
+          <p class="kicker">ECIS 2026 · selected for AIS Insights</p>
           <p>
             Together with an SME, we designed an LLM-agent system for public tender
             analysis. On 34 real tenders it cut initial screening time by 59% at
@@ -91,6 +115,17 @@
             orchestrating and verifying the system's output.
           </p>
           <span class="pub-links"><a href="/publications.html#ecis">Paper details</a></span>
+        </article>
+
+        <article class="project" id="consight">
+          <h3>ConSight: LLM-based retrieval over construction documents</h3>
+          <p class="kicker">WI 2025 · NaiS project</p>
+          <p>
+            An LLM-based system that extracts and analyses information from large,
+            unstructured collections of building documents, developed with partners
+            in the NaiS project.
+          </p>
+          <span class="pub-links"><a href="/projects.html">Projects</a></span>
         </article>
       </main>
     </div>

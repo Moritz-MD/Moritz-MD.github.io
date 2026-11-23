@@ -8,7 +8,6 @@
   --border: #e2e8f0;
   --accent: #1d4f76;
   --accent-hover: #173b58;
-  --accent-soft: #e8eff5;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --masthead-height: 64px;
   --shell: 1024px;
@@ -61,7 +60,8 @@ a:hover {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: var(--heading);
   font-weight: 700;
   text-wrap: balance;
@@ -227,141 +227,46 @@ b {
   margin-bottom: 0.5rem;
 }
 
-/* Theory-to-practice figure on the About page */
-.pipeline {
-  margin: 1.25rem 0 0.5rem;
-  padding: 1.5rem 1.25rem 1.25rem;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 10px;
+.themes li {
+  margin-bottom: 0.45rem;
 }
 
-.steps {
-  list-style: none;
-  margin: 0;
-  padding: 0 !important;
+/* Project map on the Research page */
+.map {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr);
-  gap: 0 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 1.5rem 0 0.5rem;
+  border-top: 2px solid var(--heading);
 }
 
-.page .steps li {
-  margin: 0;
-}
-
-.step {
+.map-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-width: 0;
+  gap: 0.35rem;
+  padding: 0.75rem 1rem 0.25rem 0;
 }
 
-.step-icon {
-  display: grid;
-  place-items: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: var(--accent-soft);
-  color: var(--accent);
-  margin-bottom: 0.7rem;
+.map-col + .map-col {
+  padding-left: 1rem;
+  border-left: 1px solid var(--border);
 }
 
-.step-icon svg {
-  width: 28px;
-  height: 28px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.step-icon .thin {
-  stroke-width: 1.3;
-  opacity: 0.7;
-}
-
-.step-icon .dot {
-  fill: currentColor;
-  stroke: none;
-}
-
-.step-kicker {
-  color: var(--muted);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.step-title {
+.page .map-head {
+  margin: 0 0 0.3rem;
   color: var(--heading);
-  font-size: 1.05rem;
   font-weight: 700;
-  margin: 0.1rem 0 0.4rem;
 }
 
-.step-text {
-  font-size: 0.82rem;
-  line-height: 1.5;
-  margin-bottom: 0.6rem;
-}
-
-.page a.step-eg {
-  margin-top: auto;
-  font-size: 0.78rem;
+.map-head span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
-.step-arrow {
-  align-self: start;
-  margin-top: 22px !important;
-  color: var(--muted);
-}
-
-.step-arrow svg {
-  width: 28px;
-  height: 12px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-/* dashed return path from Build back to Model */
-.loop {
-  position: relative;
-  margin: 0.9rem 15% 0;
-  height: 22px;
-  border: 1.5px dashed #94a3b8;
-  border-top: 0;
-  border-radius: 0 0 14px 14px;
-}
-
-.loop::before {
-  content: "";
-  position: absolute;
-  left: -6px;
-  top: -6px;
-  border: 5px solid transparent;
-  border-bottom: 7px solid #94a3b8;
-  border-top: 0;
-}
-
-.loop span {
-  position: absolute;
-  left: 50%;
-  bottom: -0.7em;
-  transform: translateX(-50%);
-  background: #fff;
-  padding: 0 0.6em;
-  color: var(--muted);
-  font-size: 0.75rem;
-  font-style: italic;
-  white-space: nowrap;
+.map a {
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .news {
@@ -394,18 +299,18 @@ b {
   margin-top: 1.75rem;
 }
 
-.project h2 {
+.project h3 {
   font-size: 1.125rem;
   line-height: 1.35;
   margin: 0 0 0.25rem;
 }
 
-.project h2 a {
+.project h3 a {
   color: var(--heading);
   text-decoration: none;
 }
 
-.project h2 a:hover {
+.project h3 a:hover {
   color: var(--accent);
 }
 
@@ -535,46 +440,14 @@ b {
 }
 
 @media (max-width: 640px) {
-  .pipeline {
-    padding: 1.25rem 1rem 1rem;
-  }
-
-  .steps {
+  .map {
     grid-template-columns: 1fr;
-    gap: 6px;
   }
 
-  .step-arrow {
-    margin: 0 !important;
-    justify-self: center;
-    transform: rotate(90deg);
-  }
-
-  .step-text {
-    max-width: 30em;
-  }
-
-  .loop {
-    margin: 1rem 0 0;
-    height: auto;
-    border: 0;
-    text-align: center;
-  }
-
-  .loop::before {
-    display: none;
-  }
-
-  .loop span {
-    position: static;
-    transform: none;
-    white-space: normal;
-    padding: 0;
-  }
-
-  .loop span::before {
-    content: "↺ ";
-    font-style: normal;
+  .map-col + .map-col {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--border);
   }
 }
 
