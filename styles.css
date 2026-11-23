@@ -513,3 +513,14 @@ b {
   border-bottom: 1px solid var(--border);
   font-size: 0.95rem;
 }
+
+.page h1.hello {
+  font-size: clamp(2.25rem, 1.8rem + 2vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.1rem;
+}
+
+.page .interests {
+  margin-top: 2rem;
+}
